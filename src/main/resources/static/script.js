@@ -75,7 +75,7 @@ async function addUsers() {
         };
 
         try {
-            await table.addItemddd(user);
+            await table.addGeneratedItems(user);
         } catch (error) {
             console.error(`Error adding user ${user.name}:`, error);
         }

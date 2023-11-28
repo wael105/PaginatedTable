@@ -48,7 +48,7 @@ class PaginatedTable {
         }
     }
 
-    async addItemddd(json) {
+    async addGeneratedItems(json) {
         const newName = json.name;
         const newMajor = json.major;
         const newPhone = json.phoneNumber;
