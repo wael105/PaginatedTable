@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Paginated Table</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<table id="myTable">
+    <thead>
+    <tr>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Table rows will be dynamically added here -->
+    </tbody>
+</table>
+
+<div class="pagination" id="pagination"></div>
+<form id="addItemForm">
+    <label for="name">Name:</label>
+    <input id="name" required type="text">
+
+    <select id="major">
+        <option disabled selected value="">Select an option</option>
+    </select>
+
+    <label for="phone">Phone:</label>
+    <input id="phone" required type="text">
+
+    <label for="gpa">Gpa:</label>
+    <input id="gpa" required step="0.01" min='0' type="number">
+
+    <button type="submit">Add Item</button>
+</form>
+
+<button id="delete">Delete</button>
+<button id="export">Export</button>
+<button id="generate">generate</button>
+
+<script type="module" src="script.js"></script>
+
+</body>
+</html>
